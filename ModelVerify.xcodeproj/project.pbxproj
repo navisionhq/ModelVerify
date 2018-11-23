@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0090E13021A89831004DCC50 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090E12F21A89831004DCC50 /* main.swift */; };
+		0090E13D21A8991A004DCC50 /* ModelVerifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0090E13C21A8991A004DCC50 /* ModelVerifyTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +26,21 @@
 /* Begin PBXFileReference section */
 		0090E12C21A89831004DCC50 /* ModelVerify */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ModelVerify; sourceTree = BUILT_PRODUCTS_DIR; };
 		0090E12F21A89831004DCC50 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0090E13A21A8991A004DCC50 /* ModelVerifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelVerifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0090E13C21A8991A004DCC50 /* ModelVerifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelVerifyTests.swift; sourceTree = "<group>"; };
+		0090E13E21A8991A004DCC50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0090E14221A89B94004DCC50 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0090E12921A89831004DCC50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0090E13721A8991A004DCC50 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,7 +53,9 @@
 		0090E12321A89831004DCC50 = {
 			isa = PBXGroup;
 			children = (
+				0090E14221A89B94004DCC50 /* README.md */,
 				0090E12E21A89831004DCC50 /* ModelVerify */,
+				0090E13B21A8991A004DCC50 /* ModelVerifyTests */,
 				0090E12D21A89831004DCC50 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				0090E12C21A89831004DCC50 /* ModelVerify */,
+				0090E13A21A8991A004DCC50 /* ModelVerifyTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +75,15 @@
 				0090E12F21A89831004DCC50 /* main.swift */,
 			);
 			path = ModelVerify;
+			sourceTree = "<group>";
+		};
+		0090E13B21A8991A004DCC50 /* ModelVerifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				0090E13C21A8991A004DCC50 /* ModelVerifyTests.swift */,
+				0090E13E21A8991A004DCC50 /* Info.plist */,
+			);
+			path = ModelVerifyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +106,23 @@
 			productReference = 0090E12C21A89831004DCC50 /* ModelVerify */;
 			productType = "com.apple.product-type.tool";
 		};
+		0090E13921A8991A004DCC50 /* ModelVerifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0090E13F21A8991A004DCC50 /* Build configuration list for PBXNativeTarget "ModelVerifyTests" */;
+			buildPhases = (
+				0090E13621A8991A004DCC50 /* Sources */,
+				0090E13721A8991A004DCC50 /* Frameworks */,
+				0090E13821A8991A004DCC50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModelVerifyTests;
+			productName = ModelVerifyTests;
+			productReference = 0090E13A21A8991A004DCC50 /* ModelVerifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +134,9 @@
 				ORGANIZATIONNAME = "Madhav Jha";
 				TargetAttributes = {
 					0090E12B21A89831004DCC50 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					0090E13921A8991A004DCC50 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -110,9 +154,20 @@
 			projectRoot = "";
 			targets = (
 				0090E12B21A89831004DCC50 /* ModelVerify */,
+				0090E13921A8991A004DCC50 /* ModelVerifyTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0090E13821A8991A004DCC50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0090E12821A89831004DCC50 /* Sources */ = {
@@ -120,6 +175,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0090E13021A89831004DCC50 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0090E13621A8991A004DCC50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0090E13D21A8991A004DCC50 /* ModelVerifyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +324,42 @@
 			};
 			name = Release;
 		};
+		0090E14021A8991A004DCC50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8P27HV5HR7;
+				INFOPLIST_FILE = ModelVerifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ModelVerifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		0090E14121A8991A004DCC50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 8P27HV5HR7;
+				INFOPLIST_FILE = ModelVerifyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ModelVerifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -278,6 +377,15 @@
 			buildConfigurations = (
 				0090E13421A89831004DCC50 /* Debug */,
 				0090E13521A89831004DCC50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0090E13F21A8991A004DCC50 /* Build configuration list for PBXNativeTarget "ModelVerifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0090E14021A8991A004DCC50 /* Debug */,
+				0090E14121A8991A004DCC50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
