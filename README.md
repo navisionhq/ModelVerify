@@ -1,5 +1,8 @@
 #  Model Verify
 
+This macOS command line application package demonstrates how to use unit tests to verify that CoreML model is able to make predictions meaningfully. The code is based on [coreml-simple-demo](https://github.com/benjaminirving/coreml-simple-demo).
+
+
 ## Setup
 
 
